@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Desaparecido</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('img').click(function(){
+                $(this).hide();
+            });
+
+            $('#restaurar').click(function(){
+                $('img').show();
+            });
+        });
+    </script>
+    <style>
+        main{
+            width: 1000px;
+            background-color: brown;
+        }
+        img{
+            border: 5px solid green;
+            margin: 10px;
+        }
+
+        button{
+            background-color: pink;
+            border: solid 5px blue;
+            vertical-align: middle;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="Draven.jpg" width="200px">
+        <img src="Draven.jpg" width="200px">
+        <img src="Draven.jpg" width="200px">
+        <img src="Draven.jpg" width="200px">
+        <img src="Draven.jpg" width="200px">
+        <img src="Draven.jpg" width="200px">
+        <img src="Draven.jpg" width="200px">
+        <img src="Draven.jpg" width="200px">
+        <footer>
+            <button id="restaurar">Restaturar</button>
+        </footer>
+    </main>  
+</body>
+</html>
